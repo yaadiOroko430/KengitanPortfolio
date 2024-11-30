@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Works on Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ff0011;
+    scrollbar-track-color: #009ac3;
+  }
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: #009ac3;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff0011;
+    /* background-image: linear-gradient(to bottom, #9fe2f9, #006eff) !important; */
+    /* border-radius: 20px; */
+    /* border: 3px solid orange; */
+  }
+
+  html {
+    font-family: "Raleway", sans-serif;
+  }
+  body{
+    --xposition: calc(100vw - 28px);
+  }
+  .animate-menu {
+    transform-origin: var(--xposition) 38px;
+  }
+  .animatedHeading {
+    width: fit-content;
+    background-clip: text;
+    background-image: linear-gradient(
+      45deg,
+      #09deff,
+      #22d3ee,
+      #3983f5,
+      #0066ff
+    );
+    background-size: 150%;
+    animation: customAnimation 2s ease-in-out 0s infinite alternate;
+  }
+  @keyframes customAnimation {
+    0% {
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
+  }
+}
+
+@layer components {
+  .section {
+    @apply flex flex-col  w-full h-full max-w-screen-lg px-2 xs:px-10 md:px-12 mx-auto py-16;
+  }
+  .form-input {
+    @apply pt-[0.65rem] pb-[0.4rem] px-10 bg-transparent border-2 rounded-md placeholder-shown:border-gray-400 placeholder:text-gray-500 text-white focus:outline-none w-full focus:text-white focus:border-white;
+  }
+}
