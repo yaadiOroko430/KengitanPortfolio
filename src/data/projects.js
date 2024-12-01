@@ -19,7 +19,7 @@ const projects = [
         name: "DidgitalClock",
         demo: "https://ecommerce-dashboard-793.vercel.app/",
         code: "https://github.com/yaadiOroko430/digital-clock",
-        description: "All in One Dashboard for managing Ecommerce Stores, built with NextJS, ReactJs and shadcn-ui with prisma, typescript, planetScale, and clerkauth.",
+        description: "A Digital Clock application built with React that displays the current time in hours, minutes, and seconds in a digital format. The clock will update every second to reflect the real-time system time and can optionally show the current date. This project demonstrates state management in React using hooks like useState and useEffect",
         style: {
             shadow: "shadow-[#3498AB]",
             cover: "from-[#3498AB]",
@@ -31,7 +31,7 @@ const projects = [
         name: "ToDo List",
         demo: "https://dev-store-793.vercel.app/",
         code: "https://github.com/yaadiOroko430/ToDoList",
-        description: "DevStore is an All in One E-Commerce Shopping website built with NextJs,",
+        description: "A To-Do List application built with React allows users to add, edit, delete, and mark tasks as complete. ",
         style: {
             shadow: "shadow-[#5E4746]",
             cover: "from-[#5E4746]",
@@ -66,8 +66,8 @@ const projects = [
         img: yaadFolio,
         name: "DevFolio",
         demo: "https://dev-folio-793.vercel.app",
-        code: "https://github.com/dhawal-793/DevFolio",
-        description: "Devfolio: Dhawal's Personal portfolio built with React Js, Tailwind CSS and Vite Js",
+        code: "https://github.com/yaadiOroko430/KengitanPortfolio",
+        description: "Kengitan Qabato Personal portfolio built with React Js, Tailwind CSS and Vite Js",
         style: {
             shadow: "shadow-[#23CEEE]",
             cover: "from-[#23CEEE]",
