@@ -3,7 +3,7 @@ import React from "react";
 import AnimatedWrapper from "./ui/AnimatedWrapper";
 
 import { Download } from "./Icons";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/resume.jpg";
 import profile from "../assets/profile.png";
 import SectionHeading from "./SectionHeading";
 import techStack from "../data/techStack";
