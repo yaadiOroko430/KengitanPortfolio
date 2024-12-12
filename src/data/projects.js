@@ -40,8 +40,8 @@ const projects = [
     },
     {
         img: Dev_News,
-        name: "Dev News",
-        demo: "https://dev-news-793.vercel.app/",
+        name: "Feedback Management System",
+        demo: "(https://feedback-website.onrender.com",
         code: "https://github.com/dhawal-793/Dev_News",
         description: "Dev News is a news website, where you can find the latest news anytime, anywhere",
         style: {
