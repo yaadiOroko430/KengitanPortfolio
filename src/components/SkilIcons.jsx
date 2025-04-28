@@ -148,6 +148,44 @@ const TS = ({ width = 35, height = 45 }) => {
     </>
   );
 };
+const Firebase = ({ width = 35, height = 45 }) => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 256 351"
+        width={width}
+        height={height}
+      >
+        <path
+          fill="#FFC24A"
+          d="M0 263L59 43c3-11 15-14 21-4l38 61-118 163z"
+        />
+        <path
+          fill="#F4BD62"
+          d="M0 263l59-220c3-11 12-15 19-6l38 64-116 162z"
+        />
+        <path
+          fill="#F6820C"
+          d="M136 155l-40-119c-3-8-13-9-17-1l-79 228 136-108z"
+        />
+        <path
+          fill="#FDE068"
+          d="M136 155l-136 108 108 81 28-189z"
+        />
+        <path
+          fill="#FCCA3F"
+          d="M136 155l-28 189 102-76c6-5 8-13 6-20l-80-93z"
+        />
+        <path
+          fill="#EEAB37"
+          d="M108 344l102-76c6-5 8-13 6-20l-80-93-28 189z"
+        />
+      </svg>
+    </>
+  );
+};
+
 const TailwindCSS = ({ width = 40, height = 45 }) => {
   return (
     <>
@@ -1824,4 +1862,5 @@ export {
   Newrelic,
   Prometheus,
   CircleCI,
+  Firebase
 };

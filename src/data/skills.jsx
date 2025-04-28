@@ -5,16 +5,15 @@ import ReactJs, {
     TailwindCSS,
     ExpressJS,
     MongoDB,
-    TS,
     JS,
     CSS,
     HTML,
     Git,
     GitHub,
     VSCode,
-    PostMan,
     Redux,
-    Flutter
+    Flutter,
+    FireBase
 
    
   } from "../components/SkilIcons";
@@ -89,8 +88,8 @@ import ReactJs, {
       },
     },
     {
-      icon: <TS />,
-      name: "TS",
+      icon: <FireBase />,
+      name: "Firebase",
       style: {
         shadow: "shadow-[#3481d3]",
         cover: "from-black to-[#3481d3] rounded-b-md",
@@ -164,15 +163,15 @@ import ReactJs, {
       },
     },
     
-    {
-      icon: <PostMan />,
-      name: "PostMan",
-      style: {
-        shadow: "shadow-[#FF6C37]",
-        cover: "from-black to-[#FF6C37] rounded-b-md",
-        opacity: "opacity-80",
-      },
-    },
+    // {
+    //   icon: <PostMan />,
+    //   name: "PostMan",
+    //   style: {
+    //     shadow: "shadow-[#FF6C37]",
+    //     cover: "from-black to-[#FF6C37] rounded-b-md",
+    //     opacity: "opacity-80",
+    //   },
+    // },
   
   ];
   export default skills;

@@ -11,7 +11,7 @@ const socials = [
     {
         id: 2,
         name: "GitHub",
-        link: "https://github.com/dhawal-793",
+        link: "https://github.com/yaadiOroko430",
         icon: <FaGithub size={22} />,
         style: "hover:bg-black hover:text-[#E6EDF0]"
 

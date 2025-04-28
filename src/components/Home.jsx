@@ -4,20 +4,19 @@ import { Link } from "react-scroll";
 
 import AnimatedWrapper from "./ui/AnimatedWrapper";
 import { ArrowDown } from "./Icons";
-import Avatar from "../assets/Avatars/Yaad2.jpg";
+import Avatar from "../assets/Avatars/avatar.png";
 import contactInfo from "../data/contactInfo";
 
 const Home = () => {
   const interests = [
     " . . . ",
     3000,
-    "Frontend Development",
-    2000,
-    "Backend Development",
+    "Full Stack Development",
     2000,
     "Mobile App Development",
+    2000,
+    "Graphics Design",
     4000,
-   
     "Video Editing",
     2000,
   ];
@@ -25,43 +24,27 @@ const Home = () => {
   return (
     <div
       name="Home"
-      className="pt-8 h-full min-h-screen w-full flex items-center bg-gradient-to-b from-black via-black to-gray-800"
+      className="pt-16 h-full min-h-screen w-full flex items-center bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white"
     >
-      <div className="section gap-16 md:gap-8 md:justify-between items-center md:flex-row-reverse w-full px-5">
-        {/* Avatar Section */}
-        <div className="flex flex-col justify-center md:w-2/5 w-full mb-8 md:mb-0">
-          <AnimatedWrapper delay={0.8} animateFrom="left">
-            <img
-              src={Avatar}
-              alt="Yaad's Avatar"
-              width="auto"
-              height="auto"
-              loading="eager"
-              title="Avatar"
-              className="rounded-full mx-auto w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48"
-            />
-          </AnimatedWrapper>
-        </div>
-
+      <div className="container mx-auto px-5 sm:px-10 lg:px-20 flex flex-col-reverse md:flex-row justify-between items-center">
         {/* Text Section */}
-        <div className="pl-2 xs:pl-8 flex flex-col gap-3 justify-center text-gray-200 w-full md:w-3/5">
+        <div className="md:w-1/2 mt-10 md:mt-0 text-center md:text-left">
           <AnimatedWrapper delay={0.2}>
-            <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-bold text-center sm:text-left">
-              <span className="block">Hi There, </span>
-              <span>I'm </span>
-              <span className="text-transparent bg-gradient-to-br from-cyan-300 to-blue-600 bg-clip-text">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+              <span className="block">Hello, I'm</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
                 Kengitan Qabato
               </span>
             </h1>
           </AnimatedWrapper>
 
           <AnimatedWrapper delay={0.35}>
-            <p className="text-gray-400 text-lg xs:text-xl sm:text-2xl font-semibold py-4 min-w-[16rem] xs:min-w-[20rem] max-w-[26rem] text-center sm:text-left">
-              <span className="block xs:inline">I am into</span>
-              <span className="text-cyan-400 xs:pl-2">
+            <p className="text-lg sm:text-xl text-gray-300 font-medium mb-6">
+              A passionate developer specializing in{" "}
+              <span className="text-cyan-400">
                 <TypeAnimation
                   sequence={interests}
-                  speed={1}
+                  speed={50}
                   wrapper="span"
                   cursor={true}
                   repeat={Infinity}
@@ -72,45 +55,44 @@ const Home = () => {
 
           {/* Contact Icons */}
           <AnimatedWrapper delay={0.45}>
-            <ul className="flex items-center z-40 gap-3 md:gap-8 lg:gap-4 justify-center sm:justify-start flex-wrap">
-              {contactInfo.map(({ id, link, name, icon, download }) => {
-                return (
-                  <li
-                    key={id}
-                    link={link}
-                    className={`group relative w-8 h-8 flex justify-center items-center rounded-full p-1 sm:grayscale cursor-pointer duration-[450ms] transition ease-in hover:grayscale-0 hover:scale-105 focus:grayscale-0 focus:scale-105 active:grayscale-0 active:scale-105`}
+            <ul className="flex items-center gap-4 justify-center md:justify-start mb-8">
+              {contactInfo.map(({ id, link, icon }) => (
+                <li key={id} className="hover:scale-110 transition-transform">
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white"
                   >
-                    <a
-                      href={link}
-                      download={download}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {icon}
-                    </a>
-                  </li>
-                );
-              })}
+                    {icon}
+                  </a>
+                </li>
+              ))}
             </ul>
           </AnimatedWrapper>
 
           {/* About Me Button */}
           <AnimatedWrapper delay={0.55}>
-            <div className="py-5 text-center">
-              <Link
-                to="About"
-                smooth
-                duration={500}
-                className="z-30 group bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center gap-3 px-6 py-3 rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-40 relative"
-              >
-                <span className="pr-6 sm:pr-0 sm:group-hover:-translate-x-5 sm:transition-transform delay-[400ms] ease-out">
-                  About Me
-                </span>
-                <span className="absolute z-30 right-5 sm:-translate-y-7 sm:group-hover:translate-y-0 sm:scale-0 transition-all group-hover:scale-125 ease-in delay-200 animate-pulse duration-500">
-                  <ArrowDown />
-                </span>
-              </Link>
-            </div>
+            <Link
+              to="About"
+              smooth
+              duration={500}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full text-white font-medium shadow-md hover:shadow-lg transition-shadow"
+            >
+              <span>About Me</span>
+              <ArrowDown className="w-4 h-4" />
+            </Link>
+          </AnimatedWrapper>
+        </div>
+
+        {/* Avatar Section */}
+        <div className="md:w-1/2 flex justify-center md:justify-end">
+          <AnimatedWrapper delay={0.8}>
+            <img
+              src={Avatar}
+              alt="Kengitan Qabato"
+              className="w-64 h-64 sm:w-80 sm:h-80 border-4 border-cyan-500 shadow-lg rounded-full"
+            />
           </AnimatedWrapper>
         </div>
       </div>

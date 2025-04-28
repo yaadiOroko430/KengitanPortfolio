@@ -7,6 +7,34 @@ function LinkedIn() {
         </svg>
     )
 }
+function TikTok() {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20">
+            <path fill="#25F4EE" d="M20 6v26.5a5.5 5.5 0 1 1-5.5-5.5h.5v-6h-.5c-6.35 0-11.5 5.15-11.5 11.5S8.65 44 15 44s11-5.15 11-11.5V17c2.6 2.5 6.15 4 10 4v-6c-3.85 0-7.4-1.5-10-4-1.5-1.5-2.6-3.35-3-5.5h-6z"/>
+            <path fill="#FE2C55" d="M26 6h-6v28c0 3.325-2.675 6-6 6s-6-2.675-6-6c0-3.325 2.675-6 6-6h.5v-6h-.5C8.65 22 4 26.65 4 32.5S8.65 43 15 43s11-4.65 11-10.5V18c2.6 2.5 6.15 4 10 4v-6c-3.85 0-7.4-1.5-10-4-1.5-1.5-2.6-3.35-3-5.5z"/>
+            <path fill="#FFFFFF" d="M20 6v26.5a5.5 5.5 0 1 1-5.5-5.5h.5v-5h-.5c-6.075 0-11 4.925-11 11s4.925 11 11 11 11-4.925 11-11V17c2.5 2.4 6.075 4 10 4v-5c-3.925 0-7.5-1.6-10-4-1.5-1.5-2.5-3.375-3-5.5z"/>
+        </svg>
+    )
+}
+
+
+function Instagram() {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20">
+            <path fill="#E1306C" d="M34.5 4h-21A9.5 9.5 0 0 0 4 13.5v21A9.5 9.5 0 0 0 13.5 44h21a9.5 9.5 0 0 0 9.5-9.5v-21A9.5 9.5 0 0 0 34.5 4z"/>
+            <path fill="#FFF" d="M24 16.8a7.2 7.2 0 1 1 0 14.4 7.2 7.2 0 0 1 0-14.4zm0 18.4c5.96 0 10.8-4.84 10.8-10.8S29.96 13.6 24 13.6 13.2 18.44 13.2 24.4 18.04 35.2 24 35.2zM36.8 13.2a2.4 2.4 0 1 1-4.8 0 2.4 2.4 0 0 1 4.8 0z"/>
+        </svg>
+    )
+}
+
+function Facebook() {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20">
+            <path fill="#1877F2" d="M24 4C12.954 4 4 12.954 4 24c0 9.991 7.338 18.289 16.938 19.743V30.89h-5.09v-6.89h5.09v-5.252c0-5.034 2.991-7.808 7.56-7.808 2.19 0 4.48.39 4.48.39v4.922h-2.523c-2.486 0-3.26 1.544-3.26 3.125V24h5.548l-.887 6.89h-4.661v12.853C36.662 42.289 44 33.991 44 24c0-11.046-8.954-20-20-20z" />
+        </svg>
+    )
+}
+
 function GitHub() {
     return (
         <>
@@ -237,4 +265,4 @@ function Cancel({ color }) {
 
 
 export default LinkedIn;
-export { GMail, GitHub, Telegram, Person, Discord, Twitter, Resume, Portfolio, Map, CopyRight, Code, Link, Chat, Submit, ArrowRightLong, ArrowDown, ArrowUp, Download, Hamburger, Menu, Cancel };
+export { GMail, GitHub, Telegram, Person, Discord, Twitter, Resume, Facebook,Instagram,Portfolio, Map, CopyRight, Code, Link, Chat, Submit, ArrowRightLong, ArrowDown, ArrowUp, Download, Hamburger, Menu, Cancel,TikTok };

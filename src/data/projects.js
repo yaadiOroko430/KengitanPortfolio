@@ -1,7 +1,7 @@
 import Digitalclock from "../assets/Projects/DigitalClock.png";
 import todo from "../assets/Projects/todo.png";
-import Dev_News from "../assets/Projects/Dev_News.png"
-import Dev_Notes from "../assets/Projects/Dev_Notes.png"
+import Feedback from "../assets/Projects/Feedback.png"
+import ClientPortfolio from "../assets/Projects/client.png"
 import yaadFolio from "../assets/Projects/portfolio.png"
 import Spam_Detector from "../assets/Projects/Spam_Detector.png"
 import FAC from "../assets/Projects/FAC.png"
@@ -9,6 +9,7 @@ import Simon_Game from "../assets/Projects/Simon_Game.png"
 import Todo_App from "../assets/Projects/Todo_App.png"
 import ECF from "../assets/Projects/ECF.png"
 import CLI_TMA from "../assets/Projects/CLI_TMA.png"
+
 
 
 
@@ -39,11 +40,11 @@ const projects = [
         }
     },
     {
-        img: Dev_News,
+        img: Feedback,
         name: "Feedback Management System",
-        demo: "(https://feedback-website.onrender.com",
-        code: "https://github.com/dhawal-793/Dev_News",
-        description: "Dev News is a news website, where you can find the latest news anytime, anywhere",
+        demo: "https://feedback-website.onrender.com/",
+        code: "https://github.com/yaadiOroko430/feedback-system.git",
+        description: "A simple digital platform where users can submit feedback, report corruption, and suggest improvements. It supports anonymous submissions, secure data handling, and helps organizations review and act on reports to improve transparency and service quality.",
         style: {
             shadow: "shadow-[#FB923C]",
             cover: "from-[#FB923C]",
@@ -51,9 +52,9 @@ const projects = [
         }
     },
     {
-        img: Dev_Notes,
-        name: "Dev Notes",
-        demo: "https://dev-notes-793.vercel.app/",
+        img: ClientPortfolio,
+        name: "Client personal website",
+        demo: "https://personal-client-portfolio-n5l9.vercel.app/",
         code: "https://github.com/dhawal-793/Dev_Notes",
         description: "DevNotes is a Simple Notes App Created using MERN Stack with complete user Authentication.",
         style: {
@@ -64,8 +65,8 @@ const projects = [
     },
     {
         img: yaadFolio,
-        name: "DevFolio",
-        demo: "https://dev-folio-793.vercel.app",
+        name: "Yad's portfolio",
+        demo: "https://kengitan-portfolio.vercel.app/",
         code: "https://github.com/yaadiOroko430/KengitanPortfolio",
         description: "Kengitan Qabato Personal portfolio built with React Js, Tailwind CSS and Vite Js",
         style: {
