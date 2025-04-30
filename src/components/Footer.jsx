@@ -15,8 +15,8 @@ const Footer = () => {
               <h3 className="text-white text-[1.75rem] font-bold pb-2">
                Kengitan Qabato
               </h3>
-              <p className="text-lg text-cyan-400 pb-5">FullStack Developer</p>
-              <p>Thank you for visiting My PortFolio or Kengitan Portfolio.</p>
+              <p className="text-lg text-cyan-400 pb-5">Software Engineer</p>
+              <p>Thank you for visiting my portfolio. I'm Kengitan, and I'm excited to share my work with you.</p>
               <p>You can connect with me over socials.</p>
               <p>Have any Suggestions. Type it above. </p>
             </AnimatedWrapper>
@@ -93,7 +93,7 @@ const Footer = () => {
               {" "}
               <CopyRight />
             </span>{" "}
-            ${year} | All Rights Reserved
+            ${year} Kengitan Qabato | All Rights Reserved
           </p>
          </AnimatedWrapper>
         </div>
