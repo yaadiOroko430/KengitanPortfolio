@@ -86,7 +86,7 @@ const Home = () => {
         </div>
 
         {/* Avatar Section */}
-        <div className="md:w-1/2 flex justify-center md:justify-end">
+        <div className="md:w-1/2 flex justify-center items-center">
           <AnimatedWrapper delay={0.8}>
             <img
               src={Avatar}

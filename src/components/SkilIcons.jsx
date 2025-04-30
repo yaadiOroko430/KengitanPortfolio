@@ -581,6 +581,50 @@ const VSCode = ({ width = 40, height = 45 }) => {
     </>
   );
 };
+const AdobePremiere = ({ width = 40, height = 45 }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 256 256"
+    >
+      <rect width="256" height="256" fill="#2A2A2A" />
+      <rect x="8" y="8" width="240" height="240" rx="16" fill="#9999FF" />
+      <text
+        x="50%"
+        y="60%"
+        dominantBaseline="middle"
+        textAnchor="middle"
+        fontSize="100"
+        fontFamily="Arial, sans-serif"
+        fill="#1a1a1a"
+        fontWeight="bold"
+      >
+        Pr
+      </text>
+    </svg>
+  );
+};
+
+
+const Adobe = ({ width = 40, height = 45 }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 256 256"
+    >
+      <rect width="256" height="256" fill="#FF0000" />
+      <path
+        d="M128 60l40 136h-24l-10-34H94l-10 34H60L100 60h28zm-10 28l-12 40h24l-12-40z"
+        fill="#FFF"
+      />
+    </svg>
+  );
+};
+
 const Git = ({ width = 40, height = 45 }) => {
   return (
     <>
@@ -1862,5 +1906,9 @@ export {
   Newrelic,
   Prometheus,
   CircleCI,
-  Firebase
+  Firebase,
+  AdobePremiere,
+  Adobe
+
+
 };

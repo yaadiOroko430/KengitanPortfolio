@@ -1,4 +1,4 @@
-import  { Git, VSCode, AWS, MERN, TailwindCSS } from "../components/SkilIcons"
+import  { Git, VSCode, AWS, MERN, TailwindCSS,AdobePremiere,Adobe } from "../components/SkilIcons"
 
 
 const TechStack = [
@@ -27,6 +27,16 @@ const TechStack = [
     {
         icon: <TailwindCSS width={30} height={30} />,
         name: "Tailwind CSS",
+    },
+    {
+        icon: <AdobePremiere width={35} height={35} />,
+        name: "AdobePremiere",
+        
+    },
+    {
+        icon: <Adobe width={35} height={35} />,
+        name: "Adobe",
+        
     },
 ]
 
