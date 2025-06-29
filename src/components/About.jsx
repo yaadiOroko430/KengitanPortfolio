@@ -1,9 +1,10 @@
 import React from "react";
 import AnimatedWrapper from "./ui/AnimatedWrapper";
 import { Download } from "./Icons";
-import resume from "../assets/resume.jpg";
 import SectionHeading from "./SectionHeading";
 import techStack from "../data/techStack";
+import resume1 from '../assets/Resume1.pdf'
+
 
 const About = () => {
   return (
@@ -78,7 +79,7 @@ const About = () => {
           <AnimatedWrapper>
             <div className="py-5">
               <a
-                href={resume}
+                href={resume1}
                 target="_blank"
                 rel="noreferrer"
                 download
